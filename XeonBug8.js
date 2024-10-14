@@ -2839,6 +2839,16 @@ break
 > ©2025 Limule Solitarus`);
 }
 break
+case 'alive': {
+darkphonk = fs.readFileSync('./alive.mp4')
+    XeonBotInc.sendMessage(m.chat, {video: darkphonk, mimetype:'video/mp4', ptt: true}, {quoted: m })
+}
+break
+case 'shuna': {
+darkphonk = fs.readFileSync('./shuna.mp3')
+    XeonBotInc.sendMessage(m.chat, {audio: darkphonk, mimetype:'audio/mp3', ptt: true}, {quoted: m })
+}
+break
 case 'sealing': case 'chronos': {
 	if (!isPremium) return replygcxeon(mess.prem)
 	const XeonDoc = {
@@ -3019,7 +3029,7 @@ xeonimun('\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n
 break
             case 'menu':
             case 'help':
-            case 'alive':
+            case 'm':
             case '?':
             case 'shuna':
                 let xeonmenuoh = `╭━━━〔⁩𝗦𝗛𝗨𝗡𝗔_𝗕𝗨𝗚-𝗕𝗢𝗧 〕━━✦
@@ -3122,6 +3132,7 @@ break
 ┃🌸 revoke
 ┃🌸 listonline
 ┃🌸 antilink
+┃🌸 alive
 ╰━━━━━━━━━━━━━━━✦
 ╭━━━ ᴍᴀɪɴ ᴍᴇɴᴜ❤️ ━━✦
 ┃🌸 shuna
